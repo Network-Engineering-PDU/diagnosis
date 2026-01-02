@@ -1,0 +1,258 @@
+{
+    "gw_check": {
+      "connection_alive": true
+    },
+    "app_list": {
+      "backend": false,
+      "air_quality": false,
+      "snmp": false,
+      "csv": false,
+      "net_eng": false,
+      "influx": false,
+      "mqtt": false
+    },
+    "config": {
+      "gateway": {
+        "datetime_period": 86400,
+        "battery_period": 86400,
+        "telemetry_period": 30,
+        "co2_period": 300,
+        "pwmt_period": 300,
+        "sleep_time": 120,
+        "ping_period": 0,
+        "platform": "heimdall_v2",
+        "node_db": "sqlite",
+        "task_config": "legacy"
+      },
+      "backend": {
+        "url": "https://api.tychetools.com",
+        "device_id": "112233445566",
+        "user": "user@tychetools.com",
+        "tel_period": 600,
+        "bat_period": 86400,
+        "pwmt_period": 300
+      },
+      "mqtt": {
+        "ip": "192.168.0.100",
+        "port": 1883,
+        "prefix": "tychetools"
+      },
+      "fault_manager": {
+        "transport": "bt-mesh",
+        "type": "failover",
+        "cluster": [
+          
+        ]
+      },
+      "remote_client": {
+        "url": "wss://zljh915574.execute-api.eu-west-1.amazonaws.com"
+      },
+      "remote_client_cli": {
+        "url": "https://xwryr2cuji.execute-api.eu-west-1.amazonaws.com/dev"
+      },
+      "http_logging": {
+        "url": "https://rumss5huy5zjoasb5f5zczld5m0dtjtv.lambda-url.eu-west-1.on.aws",
+        "period": 15
+      }
+    },
+    "fault_status": {
+      "status": false,
+      "strategy": "failover",
+      "transport": "bt-mesh"
+    },
+    "gw_status": {
+      "lib_version": "1.10.0",
+      "fw_version": "1.5.0",
+      "scanning": false,
+      "provisioning": false,
+      "nodes": 7,
+      "listener": false,
+      "max_nodes": 600,
+      "unicast_addr": 1,
+      "netkey": "7efde56c129e837a7917b7e59eb1c004",
+      "app_version": "1.12.0"
+    },
+    "node_summary": {
+      "node_summary": {
+        "nodes_number": 7,
+        "nodes_active": 6,
+        "perct_active": 85.71,
+        "msg_drct": 292,
+        "msg_1hop": 19,
+        "msg_2hop": 0,
+        "msg_3hop": 0,
+        "per_drct": 93.89,
+        "per_1hop": 6.11,
+        "per_2hop": 0.0,
+        "per_3hop": 0.0,
+        "batt_avg": null,
+        "batt_min": null,
+        "batt_max": null,
+        "rssi_avg": -72.5,
+        "rssi_min": -77.69,
+        "rssi_max": -69.09,
+        "temp_avg": 24.39,
+        "temp_min": 24.28,
+        "temp_max": 24.58,
+        "humd_avg": 51.0,
+        "humd_min": 50,
+        "humd_max": 52,
+        "pres_avg": null,
+        "pres_min": 0.0,
+        "pres_max": 0.0
+      }
+    },
+    "node_list": {
+      "node_list": [
+        {
+          "mac": "c32b820e99ee",
+          "addr": 23,
+          "uuid": "da510002ffffffff525520de62b57a81",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627846,
+          "last_msg_ts": 1697627839,
+          "datetime": 1697627839.820929,
+          "temperature": 2428,
+          "humidity": 52,
+          "pressure": 0,
+          "rssi": -73,
+          "rssi_avg": -71.11,
+          "ttl": [
+            51,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "mac": "c4dd6bf00faa",
+          "addr": 22,
+          "uuid": "da510002fffffffffdb2a1ca3ab001c2",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627839,
+          "last_msg_ts": 1697627834,
+          "datetime": 1697627834.970145,
+          "temperature": 2436,
+          "humidity": 51,
+          "pressure": 0,
+          "rssi": -77,
+          "rssi_avg": -74.56,
+          "ttl": [
+            48,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "mac": "c7daa5f672f1",
+          "addr": 24,
+          "uuid": "da510002ffffffff622b175c7673c059",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627838,
+          "last_msg_ts": 1697627836,
+          "datetime": 1697627836.309805,
+          "temperature": 2433,
+          "humidity": 52,
+          "pressure": 0,
+          "rssi": -70,
+          "rssi_avg": -69.09,
+          "ttl": [
+            50,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "mac": "e48cbd06669c",
+          "addr": 26,
+          "uuid": "da510002fffffffffeb93ca6d9df752f",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627834,
+          "last_msg_ts": 1697627832,
+          "datetime": 1697627832.666976,
+          "temperature": 2439,
+          "humidity": 50,
+          "pressure": 0,
+          "rssi": -80,
+          "rssi_avg": -77.69,
+          "ttl": [
+            45,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "mac": "eb3247a0bb8e",
+          "addr": 25,
+          "uuid": "da510002ffffffff263616b6bf09e526",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627853,
+          "last_msg_ts": 1697627835,
+          "datetime": 1697627835.867945,
+          "temperature": 2439,
+          "humidity": 51,
+          "pressure": 0,
+          "rssi": -75,
+          "rssi_avg": -72.99,
+          "ttl": [
+            49,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "mac": "fd88d92528f2",
+          "addr": 21,
+          "uuid": "da510002ffffffffd8d6c843577d41fd",
+          "board_id": 2,
+          "pending_tasks": [
+            
+          ],
+          "sleep_period": 120,
+          "last_wake_ts": 1697627835,
+          "last_msg_ts": 1697627833,
+          "datetime": 1697627833.64811,
+          "temperature": 2458,
+          "humidity": 50,
+          "pressure": 0,
+          "rssi": -71,
+          "rssi_avg": -69.56,
+          "ttl": [
+            49,
+            3,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "virtual_node_list": {
+      "node_list": [
+        
+      ]
+    }
+  }

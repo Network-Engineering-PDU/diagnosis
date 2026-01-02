@@ -1,0 +1,40 @@
+#!/bin/sh
+
+NAME=ttdiagnosis
+DAEMON=/usr/bin/python3
+DAEMONARGS="-u /usr/bin/start_ttdiagnosis"
+PIDFILE=/var/run/$NAME.pid
+LOGFILE=/var/log/$NAME.log
+
+test -f $DAEMON || exit 0
+
+case "$1" in
+start)
+	if [ -f $PIDFILE ]; then
+		echo "TTDiagnosis already running"
+	else
+		echo "Start diagnosis..."
+		start-stop-daemon --start --make-pidfile --pidfile $PIDFILE --background \
+			--startas /bin/bash -- -c "export HOME=/home/root; exec stdbuf -oL -eL $DAEMON $DAEMONARGS > $LOGFILE 2>&1"
+	fi
+;;
+
+stop)
+	if [ -f $PIDFILE ]; then
+		echo "Stop diagnosis service..."
+		start-stop-daemon --stop --pidfile=$PIDFILE
+		rm $PIDFILE
+	else
+		echo "TTDiagnosis service not enabled"
+	fi
+;;
+
+restart)
+	$0 stop
+	$0 start
+;;
+
+*)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac

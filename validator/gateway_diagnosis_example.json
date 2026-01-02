@@ -1,0 +1,119 @@
+{
+    "general": {
+        "hostname": "heimdall_guille",
+        "localtime": "2023-10-19T08:29:20+00:00",
+        "uptime_s": 313328,
+        "board": "heimdall_boardv2",
+        "gitrev": "8bf90f3.dirty",
+        "machine": "imx7-heimdall",
+        "bt_mac": "F8:DC:7A:65:1A:38",
+        "public_ip": "37.228.240.245",
+        "device_id": "f8dc7a651a38"
+    },
+    "hardware": {
+        "hw_version": "",
+        "enclosure": "",
+        "shield_present": false,
+        "leds": ""
+    },
+    "proccesses": {
+        "gateway": {
+        "status": "Enabled",
+        "init": true,
+        "gw_addr": 8,
+        "netkey": "010bf53186a0ee4b28885960bdd66325",
+        "nodes": 1,
+        "listener": false,
+        "scanning": false,
+        "provisioning": false,
+        "firmware": {
+            "version": "1.5.0"
+        },
+        "library": {
+            "version": "1.10.0"
+        },
+        "app": {
+            "version": "1.12.0"
+        },
+        "apps": {
+            "backend": true,
+            "snmp": false,
+            "mqtt": false,
+            "influx": false,
+            "csv": false,
+            "net_eng": false,
+            "air_quality": false
+        }
+        },
+        "ble_config": {
+        "status": "Enabled",
+        "version": "1.0.0"
+        },
+        "ssh_tunnel": {
+        "status": "Enabled",
+        "ip": "52.49.74.221",
+        "port": 43098
+        }
+    },
+    "interfaces": [
+        {
+        "name": "wlan0",
+        "state": "Connected",
+        "type": "wifi",
+        "mac": "00:25:CA:5A:60:67",
+        "ip": "192.168.0.164/24"
+        },
+        {
+        "name": "eth0",
+        "state": "Disconnected",
+        "type": "ethernet",
+        "mac": "F8:DC:7A:65:1A:36",
+        "ip": null
+        },
+        {
+        "name": "eth1",
+        "state": "Disconnected",
+        "type": "ethernet",
+        "mac": "F8:DC:7A:65:1A:37",
+        "ip": null
+        }
+    ],
+    "connection": {
+        "connected": true,
+        "interface": "wlan0",
+        "tx_bytes": 8104280,
+        "rx_bytes": 8739374,
+        "ping": {
+        "response": true,
+        "rtt_ms": 39.117
+        },
+        "wifi": {
+        "status": "Disabled",
+        "ssid": "VM6293159",
+        "passwd": "Rz35tsztrabc",
+        "signal": "72"
+        },
+        "gsm": {
+        "status": "",
+        "man": "",
+        "apn": "",
+        "operator": "",
+        "tech": "",
+        "signal": 0
+        }
+    },
+    "system": {
+        "cpu_num": 2,
+        "cpu_perc": 8,
+        "cpu_temp": 34,
+        "filesys": "/dev/mmcblk2p3",
+        "disk_size_mb": 3874,
+        "disk_available_mb": 3244,
+        "ram_size_kb": 1022400,
+        "ram_available_kb": 884776,
+        "usb_devices": [
+        "0451:2036",
+        "1d6b:0002"
+        ]
+    }
+    }
